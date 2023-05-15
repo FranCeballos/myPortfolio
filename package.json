@@ -1,0 +1,15 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "The code for my portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass css/sass/main.scss css/style.css --watch --style compressed",
+    "start": ""
+  },
+  "author": "Francisco Ceballos",
+  "license": "ISC",
+  "dependencies": {
+    "scrollmagic": "^2.0.8"
+  }
+}
