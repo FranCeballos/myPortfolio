@@ -18,24 +18,19 @@
     />
     <title>Dev. Francisco Ceballos</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script defer src="./src/js/index.js"></script>
+    <script defer src="./js/index.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <div class="nav__window-icons">
-          <div class="nav__icon close-icon"></div>
-          <div class="nav__icon minimize-icon"></div>
-          <div class="nav__icon maximize-icon"></div>
-        </div>
         <p class="nav__title noselect">Dev Francisco Ceballos</p>
-        <div class="nav__dropdown">
-          <!-- <ul class="nav__list">
+        <!-- <div class="nav__dropdown">
+          <ul class="nav__list">
                 <li class="nav__item">MyTools</li>
                 <li class="nav__item">MyProjects</li>
                 <li class="nav__item">MySocials</li>
-            </ul> -->
-        </div>
+            </ul>
+        </div> -->
         <!-- <label class="switch">
           <input type="checkbox" id="theme-toggle" />
           <span class="slider round"></span>
@@ -43,6 +38,7 @@
       </nav>
     </header>
     <main class="main">
+      <!-- HERO -->
       <section class="hero">
         <h1 class="hero__title noselect">
           LET THERE <br />
@@ -51,9 +47,51 @@
         <p class="hero__code1 slideRight noselect">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
-        <p class="hero__code2 slideLeft noselect">
+        <p class="hero__code2 slideRightSlower noselect">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
+        <p class="hero__code3 slideLeft noselect">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p class="hero__code4 slideLeftSlower noselect">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </section>
+      <!-- ABOUT -->
+      <section class="about">
+        <h2 class="about__title">./About</h2>
+        <div class="about__content">
+          <div class="about__image-box">
+            <img
+              src="./img/profile-pic.jpg"
+              alt="Profile Picture"
+              class="about__image"
+            />
+          </div>
+          <div class="about__info">
+            <div class="finder">
+              <!-- Sidebar -->
+              <div class="nav__window-icons finder__window-icons">
+                <div class="nav__icon close-icon"></div>
+                <div class="nav__icon minimize-icon"></div>
+                <div class="nav__icon maximize-icon"></div>
+              </div>
+              <div class="finder__sidebar">
+                <button id="education" class="finder__btn">Education</button>
+                <button id="certificates" class="finder__btn">
+                  Certificates
+                </button>
+              </div>
+              <!-- Content -->
+              <div class="finder__title-box">
+                <h3 class="finder__title">Francisco Ceballos</h3>
+              </div>
+              <div class="finder__content">
+                <div class="finder__content-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>

@@ -8,17 +8,33 @@
   left: 0;
   width: 100vw;
   height: 70px;
+  background-color: #1b1c1e75;
+  backdrop-filter: blur(14px);
+  z-index: 3;
 }
 
 .nav {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
   width: 100%;
   padding: 20px;
+
+  &__title {
+    font-size: 1rem;
+  }
+
+  &__dropdown {
+    flex: 1;
+  }
 }
 
-.nav__dropdown {
-  flex: 1;
+@media screen and (max-width: 425px) {
+  .nav {
+    &__title {
+      font-size: 0.8rem;
+    }
+  }
 }
