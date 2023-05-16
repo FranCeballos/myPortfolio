@@ -1,0 +1,28 @@
+.nav__window-icons {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.1vw;
+  flex: 1;
+}
+
+.nav__icon {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  margin: 0 5px;
+  flex: 1 1 1;
+}
+
+.close-icon {
+  background-color: rgb(246, 62, 63);
+}
+.minimize-icon {
+  background-color: rgb(250, 178, 36);
+}
+.maximize-icon {
+  background-color: rgb(46, 200, 51);
+}

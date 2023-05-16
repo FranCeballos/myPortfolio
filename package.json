@@ -8,8 +8,5 @@
     "start": ""
   },
   "author": "Francisco Ceballos",
-  "license": "ISC",
-  "dependencies": {
-    "scrollmagic": "^2.0.8"
-  }
+  "license": "ISC"
 }
