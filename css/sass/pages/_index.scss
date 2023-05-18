@@ -19,14 +19,10 @@
     content: "";
     position: absolute;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     top: 0;
     left: 0;
-    background: radial-gradient(
-      closest-side,
-      rgba(0, 0, 0, 0.172),
-      $bg-color
-    );
+    background: radial-gradient(closest-side, rgba(0, 0, 0, 0.172), $bg-color);
   }
 
   &__title {
@@ -42,6 +38,7 @@
     position: absolute;
     top: 25%;
     right: 5%;
+    white-space: nowrap;
   }
   &__code2 {
     color: $mainlightblue;
@@ -49,6 +46,7 @@
     top: 32%;
     right: 15%;
     font-size: 0.8rem;
+    white-space: nowrap;
   }
 
   &__code3 {
@@ -56,6 +54,7 @@
     position: absolute;
     top: 75%;
     left: 5%;
+    white-space: nowrap;
   }
 
   &__code4 {
@@ -64,6 +63,7 @@
     top: 68%;
     left: 15%;
     font-size: 0.8rem;
+    white-space: nowrap;
   }
 }
 
@@ -73,10 +73,10 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-height: 100vh;
-  padding: 50px;
+  min-height: 100vh;
+  padding: 5vw;
   margin-bottom: 10vh;
-  gap: 100px;
+  gap: 60px;
 
   &__title {
     font-size: 2rem;
@@ -86,8 +86,9 @@
     width: 100%;
     padding: 0 10vw;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 60px;
   }
 
   &__image {
@@ -122,25 +123,61 @@
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .about {
     gap: 60px;
-    &__content {
-      width: 100%;
-      padding: 0 10vw;
-      display: grid;
-      grid-template-rows: 1fr 1.5fr;
-      grid-template-columns: 1fr;
-    }
-
-    &__image {
-      &-box {
-        height: 150px;
-        width: 150px;
-      }
-    }
   }
 }
 
 @media screen and (max-width: 425px) {
+  .hero {
+    min-height: 110vh;
+
+    &::before {
+      min-height: 110vh;
+    }
+    &__code1 {
+      top: 15%;
+      right: 5%;
+      font-size: 0.8rem;
+    }
+
+    &__code2 {
+      top: 25%;
+      right: 15%;
+      font-size: 0.6rem;
+    }
+
+    &__code3 {
+      top: 85%;
+      left: 5%;
+      font-size: 0.8rem;
+    }
+
+    &__code4 {
+      top: 75%;
+      left: 15%;
+      font-size: 0.6rem;
+    }
+  }
+  .about {
+    margin-top: 15vh;
+    padding: 25px;
+    gap: 30px;
+    &__content {
+      padding: 0;
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    &__title {
+      font-size: 2.3rem;
+    }
+  }
+  .about {
+    padding: 5px;
+  }
 }

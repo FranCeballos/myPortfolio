@@ -1,14 +1,33 @@
 .finder__btn {
-  background-color: #323a48;
+  background-color: rgba(0, 0, 0, 0);
   padding: 7px 13px;
   color: $mainlightgrey;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s all ease-out;
 }
 
 .finder__btn:hover {
   background-color: #323a48;
+}
+
+.finder__btn.active {
+  background-color: #323a48;
+}
+
+@media screen and (max-width: 425px) {
+  .finder__btn {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 7px 13px;
+    background-color: #323a48;
+    font-size: 0.9rem;
+    border: none;
+  }
+
+  .finder__btn.active {
+    background-color: $mainlightblue;
+  }
 }

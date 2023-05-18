@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png\"
+      sizes="32x32"
+      href="/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/img/favicons/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/img/favicons/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/img/favicons/android-chrome-512x512.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,14 +46,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <title>Dev. Francisco Ceballos</title>
+    <title>Dev Francisco Ceballos</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/index.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <p class="nav__title noselect">Dev Francisco Ceballos</p>
+        <a href="#main">
+          <p class="nav__title noselect">Dev Francisco Ceballos</p>
+        </a>
         <!-- <div class="nav__dropdown">
           <ul class="nav__list">
                 <li class="nav__item">MyTools</li>
@@ -37,7 +69,7 @@
         </label> -->
       </nav>
     </header>
-    <main class="main">
+    <main id="main" class="main">
       <!-- HERO -->
       <section class="hero">
         <h1 class="hero__title noselect">
@@ -77,8 +109,10 @@
                 <div class="nav__icon maximize-icon"></div>
               </div>
               <div class="finder__sidebar">
-                <button id="education" class="finder__btn">Education</button>
-                <button id="certificates" class="finder__btn">
+                <button id="education-btn" class="finder__btn">
+                  Education
+                </button>
+                <button id="certificates-btn" class="finder__btn">
                   Certificates
                 </button>
               </div>
@@ -87,7 +121,7 @@
                 <h3 class="finder__title">Francisco Ceballos</h3>
               </div>
               <div class="finder__content">
-                <div class="finder__content-list"></div>
+                <ul class="item__list"></ul>
               </div>
             </div>
           </div>

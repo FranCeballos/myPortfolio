@@ -4,9 +4,21 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
   background-color: #222831;
   color: $text-color;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
