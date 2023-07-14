@@ -10,7 +10,7 @@
   height: 70px;
   background-color: var(--maindarkgrey2-75);
   backdrop-filter: blur(14px);
-  z-index: 3;
+  z-index: 99;
 }
 
 .nav {

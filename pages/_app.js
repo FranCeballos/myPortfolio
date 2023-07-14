@@ -1,10 +1,13 @@
 import NavBarLayout from "@/components/UI/NavBarLayout";
 import "@/styles/globals.css";
+import { AnimatePresence } from "framer-motion";
 
 export default function App({ Component, pageProps }) {
   return (
-    <NavBarLayout>
-      <Component {...pageProps} />
-    </NavBarLayout>
+    <AnimatePresence mode="wait">
+      <NavBarLayout>
+        <Component {...pageProps} />
+      </NavBarLayout>
+    </AnimatePresence>
   );
 }
