@@ -33,7 +33,7 @@
   width: 25vw;
   height: 20px;
   top: 0vh;
-  left: 0vw;
+  left: -1vh;
   rotate: 45deg;
   background-color: var(--mainlightblue);
   z-index: 3;

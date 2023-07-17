@@ -1,0 +1,31 @@
+.section__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 4rem;
+}
+
+.section__image-box {
+  place-self: center;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid rgb(67, 67, 67);
+}
+
+.section__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 425px) {
+  .section__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 0rem;
+  }
+}

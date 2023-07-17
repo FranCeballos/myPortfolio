@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 function HeadComponent(props) {
   const { title, description } = props;
@@ -25,6 +26,11 @@ function HeadComponent(props) {
           href="/assets/img/favicons/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicons/site.webmanifest" />
+        <Script
+          src="https://platform.linkedin.com/badges/js/profile.js"
+          defer
+          type="text/javascript"
+        />
       </Head>
     </>
   );

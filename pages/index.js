@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import HeadComponent from "@/components/Head/Head";
 import Hero from "@/components/Sections/Hero";
+import SectionLayout from "@/components/Sections/SectionLayout";
+import About from "@/components/Sections/About/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,9 @@ export default function Home() {
         description="Full-Stack Web Developer"
       />
       <Hero />
+      <SectionLayout title="./AboutMe">
+        <About />
+      </SectionLayout>
     </>
   );
 }
