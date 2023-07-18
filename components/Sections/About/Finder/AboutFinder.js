@@ -7,14 +7,13 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import classes from "./AboutFinder.module.css";
-import CertificatesList from "./CertificatesList";
-import EducationList from "./EducationList";
+import List from "./List";
 import FinderControlIcons from "./FinderControlIcons";
 import { useWindowSize } from "@/hooks/useWindowSize";
+import { certificatesData, educationData, socialsData } from "@/db/myData";
 
 const AboutFinder = ({ containerRef }) => {
-  const [showCertificates, setShowCertificates] = useState(false);
-  const [subfolderName, setSubfolderName] = useState("education");
+  const [subfolderName, setSubfolderName] = useState("socials");
 
   const windowSize = useWindowSize();
   const isMobile = windowSize.width < 425;
@@ -29,14 +28,9 @@ const AboutFinder = ({ containerRef }) => {
     useTransform(scrollYProgress, [0, 1], [-400, 0])
   );
 
-  const showCertificatesHandler = () => {
-    setSubfolderName("certificates");
-    setShowCertificates(true);
-  };
-  const showEducationHandler = () => {
-    setSubfolderName("education");
-    setShowCertificates(false);
-  };
+  const showCertificatesHandler = () => setSubfolderName("certificates");
+  const showEducationHandler = () => setSubfolderName("education");
+  const showSocialsHandler = () => setSubfolderName("socials");
 
   return (
     <motion.div
@@ -66,6 +60,15 @@ const AboutFinder = ({ containerRef }) => {
         >
           Certificates
         </button>
+        <button
+          onClick={showSocialsHandler}
+          id="certificates-btn"
+          className={`${classes["finder__btn"]} ${
+            subfolderName === "socials" ? classes["active"] : ""
+          }`}
+        >
+          Socials
+        </button>
       </div>
       <div className={classes["finder__title-box"]}>
         <h3 className={classes["finder__title"]}>
@@ -74,8 +77,15 @@ const AboutFinder = ({ containerRef }) => {
       </div>
       <div className={classes["finder__content"]}>
         <AnimatePresence initial={false} mode="wait">
-          {showCertificates && <CertificatesList />}
-          {!showCertificates && <EducationList />}
+          {subfolderName === "certificates" && (
+            <List key="certificates" data={certificatesData} />
+          )}
+          {subfolderName === "education" && (
+            <List key="education" data={educationData} />
+          )}
+          {subfolderName === "socials" && (
+            <List key="socials" data={socialsData} />
+          )}
         </AnimatePresence>
       </div>
     </motion.div>

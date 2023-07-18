@@ -26,11 +26,12 @@ function HeadComponent(props) {
           href="/assets/img/favicons/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicons/site.webmanifest" />
-        <Script
+        <script
           src="https://platform.linkedin.com/badges/js/profile.js"
+          async
           defer
           type="text/javascript"
-        />
+        ></script>
       </Head>
     </>
   );

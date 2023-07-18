@@ -12,35 +12,55 @@ const itemVariant = {
   },
   exit: {
     opacity: 0,
+    transition: {
+      duration: 0.05,
+    },
   },
 };
 
-const ListItem = ({ isUdemy, title, certificateUrl }) => {
+const ListItem = ({
+  educationImage,
+  isUdemy,
+  customImageUrl,
+  title,
+  hasLink,
+  externalLink,
+}) => {
   return (
     <motion.li variants={itemVariant} className={classes["item"]}>
       <div className={classes["item__img-box"]}>
         <img
           className={classes["item__img"]}
           src={
-            isUdemy
-              ? "./assets/img/udemy_logo.webp"
-              : "./assets/img/coderhouse_logo.webp"
+            educationImage
+              ? isUdemy
+                ? "./assets/img/udemy_logo.webp"
+                : "./assets/img/coderhouse_logo.webp"
+              : customImageUrl
           }
-          alt={isUdemy ? "Udemy Logo" : "CoderHouse Logo"}
+          alt={
+            educationImage
+              ? isUdemy
+                ? "Udemy Logo"
+                : "CoderHouse Logo"
+              : title
+          }
         />
       </div>
       <div className={classes["item__title-box"]}>
         <p className={classes["item__title"]}>{title}</p>
       </div>
-      <div className={classes["item__icon-box"]}>
-        <a href={certificateUrl} target="_blank">
-          <img
-            className={classes["item__icon"]}
-            src="./assets/img/eye.svg"
-            alt="Eye Icon"
-          />
-        </a>
-      </div>
+      {hasLink && (
+        <div className={classes["item__icon-box"]}>
+          <a href={externalLink} target="_blank">
+            <img
+              className={classes["item__icon"]}
+              src="./assets/img/eye.svg"
+              alt="Eye Icon"
+            />
+          </a>
+        </div>
+      )}
     </motion.li>
   );
 };
