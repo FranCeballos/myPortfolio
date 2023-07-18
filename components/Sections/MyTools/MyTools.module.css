@@ -1,0 +1,33 @@
+.tools__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  place-self: start;
+}
+
+.tools__item {
+  height: 90px;
+  width: 90px;
+  aspect-ratio: 1/1;
+  margin: 0 4vw;
+}
+
+.tools__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 425px) {
+  .tools__list {
+    margin-bottom: 2rem;
+  }
+  .tools__item {
+    height: 70px;
+    width: 70px;
+  }
+}

@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,13 +12,26 @@
   background-color: var(--bg-color);
 }
 
+.container__no-padding {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7vw 0;
+  padding-bottom: 6rem;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-color);
+}
+
 .title {
   font-size: 2rem;
   margin-bottom: 4rem;
 }
 
-@media screen and (max-width: 425px) {
-  .title {
-    margin-bottom: 0;
-  }
+.title__no-margin {
+  font-size: 2rem;
+  margin-bottom: 0;
 }

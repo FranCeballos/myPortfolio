@@ -1,11 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import HeadComponent from "@/components/Head/Head";
 import Hero from "@/components/Sections/Hero";
 import SectionLayout from "@/components/Sections/SectionLayout";
 import About from "@/components/Sections/About/About";
+import MyTools from "@/components/Sections/MyTools/MyTools";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +16,11 @@ export default function Home() {
         description="Full-Stack Web Developer"
       />
       <Hero />
-      <SectionLayout title="./AboutMe">
+      <SectionLayout title="./AboutMe" horizontalPadding={true}>
         <About />
+      </SectionLayout>
+      <SectionLayout title="./MyTools" horizontalPadding={false}>
+        <MyTools />
       </SectionLayout>
     </>
   );

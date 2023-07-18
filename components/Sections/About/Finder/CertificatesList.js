@@ -7,25 +7,25 @@ const certificatesData = [
     isUdemy: false,
     title: "HTML & CSS",
     certificateUrl:
-      "https://www.coderhouse.com/pages/certificados/629fb5e3993cad002421dd1a",
+      "https://www.coderhouse.com/certificados/629fb5e3993cad002421dd1a",
   },
   {
     isUdemy: false,
     title: "JavaScript",
     certificateUrl:
-      "https://www.coderhouse.com/pages/certificados/62f68e27628efb0024957ecf",
+      "https://www.coderhouse.com/certificados/62f68e27628efb0024957ecf",
   },
   {
     isUdemy: false,
     title: "React",
     certificateUrl:
-      "https://www.coderhouse.com/pages/certificados/6340085161b9e7000e8d224f",
+      "https://www.coderhouse.com/certificados/6340085161b9e7000e8d224f",
   },
   {
     isUdemy: false,
     title: "NodeJs / Express",
     certificateUrl:
-      "https://www.coderhouse.com/pages/certificados/645fdc308da67e0002bc6605",
+      "https://www.coderhouse.com/certificados/645fdc308da67e0002bc6605",
   },
   {
     isUdemy: true,
@@ -38,6 +38,12 @@ const certificatesData = [
     title: "Advanced React",
     certificateUrl:
       "https://www.udemy.com/certificate/UC-c762f944-1f33-44f1-9a9a-e8d8a37244f3/",
+  },
+  {
+    isUdemy: true,
+    title: "Next.js",
+    certificateUrl:
+      "https://www.udemy.com/certificate/UC-648220d2-5438-4515-bc25-caded92fb331/",
   },
   {
     isUdemy: true,

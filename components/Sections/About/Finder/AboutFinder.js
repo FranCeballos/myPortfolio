@@ -12,16 +12,17 @@ import EducationList from "./EducationList";
 import FinderControlIcons from "./FinderControlIcons";
 import { useWindowSize } from "@/hooks/useWindowSize";
 
-const AboutFinder = () => {
+const AboutFinder = ({ containerRef }) => {
   const [showCertificates, setShowCertificates] = useState(false);
   const [subfolderName, setSubfolderName] = useState("education");
 
   const windowSize = useWindowSize();
   const isMobile = windowSize.width < 425;
-  const desktopOffset = [0.3, 0.8];
-  const mobileOffset = [0.05, 0.4];
+  const desktopOffset = ["0 0.9", "0.8 1"];
+  const mobileOffset = ["0 0.9", "0.7 1"];
 
   const { scrollYProgress } = useScroll({
+    target: containerRef,
     offset: isMobile ? mobileOffset : desktopOffset,
   });
   const xPositionFinder = useSpring(
