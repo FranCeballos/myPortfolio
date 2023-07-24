@@ -13,7 +13,7 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 import { certificatesData, educationData, socialsData } from "@/db/myData";
 
 const AboutFinder = ({ containerRef }) => {
-  const [subfolderName, setSubfolderName] = useState("socials");
+  const [subfolderName, setSubfolderName] = useState("education");
 
   const windowSize = useWindowSize();
   const isMobile = windowSize.width < 425;

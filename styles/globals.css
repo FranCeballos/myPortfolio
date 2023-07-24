@@ -56,3 +56,8 @@ li {
 a {
   text-decoration: none;
 }
+
+.link-styles-off {
+  text-decoration: none;
+  color: var(--text-color);
+}

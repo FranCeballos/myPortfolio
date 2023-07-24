@@ -96,3 +96,103 @@ export const socialsData = [
     externalLink: "https://github.com/FranCeballos",
   },
 ];
+
+export const logos = [
+  { altText: "HTML logo", imageUrl: "./assets/img/tools/html.png" },
+  { altText: "CSS logo", imageUrl: "./assets/img/tools/css.png" },
+  { altText: "JavaScript logo", imageUrl: "./assets/img/tools/javascript.png" },
+  { altText: "React logo", imageUrl: "./assets/img/tools/react.png" },
+  { altText: "Next logo", imageUrl: "./assets/img/tools/nextjs.png" },
+  { altText: "Framer logo", imageUrl: "./assets/img/tools/framer.png" },
+  { altText: "Redux logo", imageUrl: "./assets/img/tools/redux.png" },
+  { altText: "Sass logo", imageUrl: "./assets/img/tools/sass.png" },
+];
+
+export const logos2 = [
+  { altText: "Node logo", imageUrl: "./assets/img/tools/nodejs.png" },
+  { altText: "Express logo", imageUrl: "./assets/img/tools/express.png" },
+  { altText: "MongoDb logo", imageUrl: "./assets/img/tools/mongodb.png" },
+  { altText: "Firebase logo", imageUrl: "./assets/img/tools/firebase.png" },
+  { altText: "Git logo", imageUrl: "./assets/img/tools/git.png" },
+  { altText: "Npm logo", imageUrl: "./assets/img/tools/npm.png" },
+  { altText: "GitHub logo", imageUrl: "./assets/img/tools/github.png" },
+  {
+    altText: "Visual Studio Code logo",
+    imageUrl: "./assets/img/tools/vsc.png",
+  },
+];
+
+export const projectsData = [
+  {
+    title: "C3 Plus Platform",
+    description:
+      "A video streaming platform built with Next.js where users can sign up, save favorites and view content from a christian church in Mendoza, Argentina.",
+    tecnology: ["Next.js", "Framer Motion", "MongoDb"],
+    imageUrl: "/assets/img/projects/c3plus.png",
+    date: "July 2023",
+    device: "Desktop / Mobile",
+    isPractice: false,
+    githubUrl: null,
+    deployUrl: "https://c3plus.vercel.app/",
+  },
+  {
+    title: "Infinity Entertaiment App",
+    description:
+      "The final project for BackEnd CoderHouse course. A SSR e-shop with login, live chat and product management. Note: Slow initial loading because of free hosting.",
+    tecnology: ["Node.js", "Express", "MongoDb"],
+    imageUrl: "/assets/img/projects/infinity.png",
+    date: "April 2023",
+    device: "Desktop",
+    isPractice: true,
+    githubUrl: "https://github.com/FranCeballos/InfinityApp-BackEnd.git",
+    deployUrl: "https://infinityentertainment.onrender.com/shop",
+  },
+  {
+    title: "Real Madrid Store Clone",
+    description:
+      "The final project for React CoderHouse course. An e-commerce where you can simulate buying Real Madrid merch.",
+    tecnology: ["React", "Firebase"],
+    imageUrl: "/assets/img/projects/realmadrid.png",
+    date: "September 2022",
+    device: "Desktop / Mobile",
+    isPractice: true,
+    githubUrl: "https://github.com/FranCeballos/realMadridStoreClone.git",
+    deployUrl: "https://real-madrid-store-clone-ceballos.vercel.app/",
+  },
+  {
+    title: "Virtual Wallet Simulator",
+    description:
+      "The final project for JavaScript CoderHouse course. A virtual wallet where you can simulate sending and receiving money, paying and saving contacts.",
+    tecnology: ["JavaScript", "API fetch"],
+    imageUrl: "/assets/img/projects/watermelon.png",
+    date: "July 2022",
+    device: "Desktop",
+    isPractice: true,
+    githubUrl:
+      "https://github.com/FranCeballos/Watermelon_wallet-simulator.git",
+    deployUrl: "https://watermelon-wallet.vercel.app/",
+  },
+  {
+    title: "PlayStation Website Clone",
+    description:
+      "The final project for HTML & CSS CoderHouse course. A static PlayStation clone website where flexbox, grids and basics animations where used.",
+    tecnology: ["HTML", "CSS", "SASS"],
+    imageUrl: "/assets/img/projects/playstation.png",
+    date: "May 2022",
+    device: "Desktop / Mobile",
+    isPractice: true,
+    githubUrl: "https://github.com/FranCeballos/static-playstation-web.git",
+    deployUrl: "http://proyectofinal-sony.vercel.app/",
+  },
+  {
+    title: "Calculator",
+    description: "A simple calculator built with Vanilla JavaScript.",
+    tecnology: ["HTML", "CSS", " JavaScript"],
+    imageUrl: "/assets/img/projects/calculator.png",
+    date: "May 2022",
+    device: "Desktop / Mobile",
+    isPractice: true,
+    githubUrl: "https://github.com/FranCeballos/calculator-fran-ceballos.git",
+    deployUrl: "https://calculator-fran-ceballos.vercel.app/",
+  },
+];

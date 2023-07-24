@@ -5,10 +5,12 @@ import Hero from "@/components/Sections/Hero";
 import SectionLayout from "@/components/Sections/SectionLayout";
 import About from "@/components/Sections/About/About";
 import MyTools from "@/components/Sections/MyTools/MyTools";
+import MyProjects from "@/components/Sections/MyProjects/MyProjects";
+import { projectsData } from "@/db/myData";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home = ({ projects }) => {
   return (
     <>
       <HeadComponent
@@ -22,6 +24,19 @@ export default function Home() {
       <SectionLayout title="./MyTools" horizontalPadding={false}>
         <MyTools />
       </SectionLayout>
+      <SectionLayout title="./MyProjects">
+        <MyProjects projects={projects} />
+      </SectionLayout>
     </>
   );
-}
+};
+
+export const getStaticProps = () => {
+  return {
+    props: {
+      projects: projectsData,
+    },
+  };
+};
+
+export default Home;

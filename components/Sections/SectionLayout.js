@@ -11,7 +11,7 @@ const SectionLayout = ({
 }) => {
   const windowSize = useWindowSize();
   const isMobile = windowSize.width < 425;
-  const desktopOffset = ["0 0.9", "0.5 1"];
+  const desktopOffset = ["0 0.9", "1 1"];
   const mobileOffset = ["0 0.9", "0.2 1"];
   const sectionRef = useRef();
   const { scrollYProgress } = useScroll({
@@ -22,17 +22,18 @@ const SectionLayout = ({
 
   return (
     <section
-      ref={sectionRef}
       className={
         horizontalPadding ? classes.container : classes["container__no-padding"]
       }
     >
-      <motion.h2
-        style={{ scale: titleScale }}
-        className={titleMargin ? classes.title : classes["title__no-margin"]}
-      >
-        {title}
-      </motion.h2>
+      <div className={classes["title-container"]} ref={sectionRef}>
+        <motion.h2
+          style={{ scale: titleScale }}
+          className={titleMargin ? classes.title : classes["title__no-margin"]}
+        >
+          {title}
+        </motion.h2>
+      </div>
       {children}
     </section>
   );

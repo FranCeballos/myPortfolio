@@ -1,30 +1,6 @@
 import { motion } from "framer-motion";
+import { logos, logos2 } from "@/db/myData";
 import classes from "./MyTools.module.css";
-
-const logos = [
-  { altText: "HTML logo", imageUrl: "./assets/img/tools/html.png" },
-  { altText: "CSS logo", imageUrl: "./assets/img/tools/css.png" },
-  { altText: "JavaScript logo", imageUrl: "./assets/img/tools/javascript.png" },
-  { altText: "React logo", imageUrl: "./assets/img/tools/react.png" },
-  { altText: "Next logo", imageUrl: "./assets/img/tools/nextjs.png" },
-  { altText: "Framer logo", imageUrl: "./assets/img/tools/framer.png" },
-  { altText: "Redux logo", imageUrl: "./assets/img/tools/redux.png" },
-  { altText: "Sass logo", imageUrl: "./assets/img/tools/sass.png" },
-];
-
-const logos2 = [
-  { altText: "Node logo", imageUrl: "./assets/img/tools/nodejs.png" },
-  { altText: "Express logo", imageUrl: "./assets/img/tools/express.png" },
-  { altText: "MongoDb logo", imageUrl: "./assets/img/tools/mongodb.png" },
-  { altText: "Firebase logo", imageUrl: "./assets/img/tools/firebase.png" },
-  { altText: "Git logo", imageUrl: "./assets/img/tools/git.png" },
-  { altText: "Npm logo", imageUrl: "./assets/img/tools/npm.png" },
-  { altText: "GitHub logo", imageUrl: "./assets/img/tools/github.png" },
-  {
-    altText: "Visual Studio Code logo",
-    imageUrl: "./assets/img/tools/vsc.png",
-  },
-];
 
 const MyTools = () => {
   return (

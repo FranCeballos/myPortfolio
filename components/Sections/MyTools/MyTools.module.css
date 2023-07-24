@@ -1,4 +1,5 @@
 .tools__list {
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -24,6 +25,7 @@
 
 @media screen and (max-width: 425px) {
   .tools__list {
+    margin-top: 5rem;
     margin-bottom: 2rem;
   }
   .tools__item {

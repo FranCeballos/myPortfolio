@@ -8,6 +8,10 @@ function HeadComponent(props) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta
+          name="format-detection"
+          content="telephone=no, date=no, email=no, address=no"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
