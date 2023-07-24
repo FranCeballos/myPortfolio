@@ -36,7 +36,7 @@ body {
   font-family: "Roboto Mono", monospace;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--maindarkgrey2);
+  background-color: var(--bg-color);
   color: var(--mainlightgrey);
   position: relative;
 }

@@ -7,6 +7,7 @@ import About from "@/components/Sections/About/About";
 import MyTools from "@/components/Sections/MyTools/MyTools";
 import MyProjects from "@/components/Sections/MyProjects/MyProjects";
 import { projectsData } from "@/db/myData";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +25,10 @@ const Home = ({ projects }) => {
       <SectionLayout title="./MyTools" horizontalPadding={false}>
         <MyTools />
       </SectionLayout>
-      <SectionLayout title="./MyProjects">
+      <SectionLayout title="./MyProjects" darker={true}>
         <MyProjects projects={projects} />
       </SectionLayout>
+      <Footer />
     </>
   );
 };

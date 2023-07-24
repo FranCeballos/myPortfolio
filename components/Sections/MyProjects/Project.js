@@ -21,16 +21,15 @@ const itemVariant = {
 
 const Project = ({ data }) => {
   return (
-    <a
+    <motion.a
+      variants={itemVariant}
+      whileHover={{ scale: 1.01 }}
+      transition={{ duration: 1, type: "spring" }}
       className="link-styles-off"
       href={data.deployUrl}
       target="_blank"
-      whileHover={{
-        scale: 1.01,
-      }}
-      transition={{ duration: 1, type: "spring" }}
     >
-      <motion.div variants={itemVariant} className={classes.container}>
+      <div className={classes.container}>
         <div className={classes["image-box"]}>
           <Image
             className={classes.image}
@@ -75,8 +74,8 @@ const Project = ({ data }) => {
             </div>
           ))}
         </div>
-      </motion.div>
-    </a>
+      </div>
+    </motion.a>
   );
 };
 

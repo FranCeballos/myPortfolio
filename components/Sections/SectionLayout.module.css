@@ -14,12 +14,12 @@
 
 .container__no-padding {
   width: 100%;
-  min-height: fit-content;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 7vw 0;
+  padding: 0;
   padding-bottom: 6rem;
   overflow: hidden;
   position: relative;
@@ -45,8 +45,37 @@
   padding: 0;
 }
 
-@media screen and (max-width: 425px) {
+.darker {
+  background-color: rgb(23, 23, 33);
+  padding-top: 90px;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 768px) {
   .title {
     padding: 4rem 0 0 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    min-height: 100vh;
+    padding: 4vw;
+  }
+
+  .container__no-padding {
+    min-height: 100vh;
+    padding: 4vw;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .darker {
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    margin-top: -50px;
+    filter: hue-rotate(0deg);
+    padding-top: 60px;
   }
 }

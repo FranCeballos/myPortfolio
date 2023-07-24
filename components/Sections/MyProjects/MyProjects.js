@@ -31,6 +31,7 @@ const MyProjects = ({ projects }) => {
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       exit="exit"
       className={classes.container}
     >

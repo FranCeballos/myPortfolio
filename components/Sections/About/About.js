@@ -1,27 +1,22 @@
 import AboutFinder from "./Finder/AboutFinder";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { useWindowSize } from "../../../hooks/useWindowSize";
 import classes from "./About.module.css";
 import { useRef } from "react";
 
 const About = () => {
   const containerRef = useRef();
-  const windowSize = useWindowSize();
-  const isMobile = windowSize.width < 425;
-  const desktopOffset = ["0 0.9", "0.8 1"];
-  const mobileOffset = ["0 0.9", "0.4 1"];
-
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: isMobile ? mobileOffset : desktopOffset,
+    offset: ["0 1", "0.6 0.8"],
   });
   const xPositionImage = useSpring(
-    useTransform(scrollYProgress, [0, 1], [500, 0])
+    useTransform(scrollYProgress, [0, 1], [400, 0])
   );
 
   return (
-    <div ref={containerRef} className={classes["section__content"]}>
+    <div className={classes["section__content"]}>
       <motion.div
+        ref={containerRef}
         style={{
           scale: scrollYProgress,
           translateX: xPositionImage,

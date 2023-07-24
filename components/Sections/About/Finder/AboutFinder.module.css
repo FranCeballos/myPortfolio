@@ -10,6 +10,7 @@
   background-color: var(--maindarkblue-2);
   padding: 20px 25px;
   z-index: 1;
+  place-self: center;
 }
 .finder__sidebar {
   margin-top: 30px;
@@ -73,8 +74,9 @@
 
 @media screen and (max-width: 425px) {
   .finder {
+    width: 95%;
     grid-template-columns: 1fr;
-    grid-template-rows: 32px 32px 43px 340px;
+    grid-template-rows: 32px 32px 100px 340px;
   }
   .finder__sidebar {
     margin-top: 10px;

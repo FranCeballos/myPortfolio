@@ -1,4 +1,5 @@
 .container {
+  max-width: 320px;
   aspect-ratio: 3 / 4;
   display: flex;
   flex-direction: column;

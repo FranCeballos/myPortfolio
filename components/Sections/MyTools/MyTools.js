@@ -6,8 +6,8 @@ const MyTools = () => {
   return (
     <>
       <motion.div
-        initial={{ x: "-50%" }}
-        animate={{ x: 0 }}
+        initial={{ x: "-50%", y: 150 }}
+        animate={{ x: 0, y: 150 }}
         transition={{
           duration: 50,
           repeat: Infinity,
@@ -29,8 +29,8 @@ const MyTools = () => {
         })}
       </motion.div>
       <motion.div
-        initial={{ x: 0 }}
-        animate={{ x: "-50%" }}
+        initial={{ x: 0, y: 225 }}
+        animate={{ x: "-50%", y: 225 }}
         transition={{
           duration: 50,
           repeat: Infinity,
