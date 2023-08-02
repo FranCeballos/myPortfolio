@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 import classes from "./Project.module.css";
 
@@ -48,7 +49,7 @@ const Project = ({ data }) => {
             {/* {data.githubUrl && (
               <Link
                 href={data.githubUrl}
-                target="_black"
+                target="_blank"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 1, type: "spring" }}
               >

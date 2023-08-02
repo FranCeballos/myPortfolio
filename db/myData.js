@@ -138,14 +138,14 @@ export const projectsData = [
   {
     title: "Infinity Entertaiment App",
     description:
-      "The final project for BackEnd CoderHouse course. A SSR e-shop with login, live chat and product management. Note: Slow initial loading because of free hosting.",
+      "The final project for Node CoderHouse course. A Server-Side-Rendered e-commerce with login, live chat and cart management.",
     tecnology: ["Node.js", "Express", "MongoDb"],
     imageUrl: "/assets/img/projects/infinity.png",
     date: "April 2023",
     device: "Desktop",
     isPractice: true,
     githubUrl: "https://github.com/FranCeballos/InfinityApp-BackEnd.git",
-    deployUrl: "https://infinityentertainment.onrender.com/shop",
+    deployUrl: "https://infinity-entertainment-app-qoo1-dev.fl0.io/shop",
   },
   {
     title: "Real Madrid Store Clone",
