@@ -24,8 +24,12 @@
 }
 
 .title {
-  font-size: 5vw;
-  z-index: 2;
+  font-family: "Inter", sans-serif;
+  font-size: 4.5vw;
+  text-align: center;
+  z-index: 4;
+  line-height: 70px;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.255);
 }
 
 .bar1 {
@@ -72,7 +76,8 @@
 
 @media screen and (max-width: 425px) {
   .title {
-    font-size: 7vw;
+    font-size: 8vw;
+    line-height: 40px;
   }
 
   .bar1,

@@ -124,23 +124,11 @@ export const logos2 = [
 
 export const projectsData = [
   {
-    title: "C3 Plus Platform",
-    description:
-      "A video streaming platform built with Next.js where users can sign up, save favorites and view content from a christian church in Mendoza, Argentina.",
-    tecnology: ["Next.js", "Framer Motion", "MongoDb"],
-    imageUrl: "/assets/img/projects/c3plus.png",
-    date: "July 2023",
-    device: "Desktop / Mobile",
-    isPractice: false,
-    githubUrl: null,
-    deployUrl: "https://c3plus.vercel.app/",
-  },
-  {
     title: "Infinity Entertaiment App",
     description:
-      "The final project for Node CoderHouse course. A Server-Side-Rendered e-commerce with login, live chat and cart management.",
-    tecnology: ["Node.js", "Express", "MongoDb"],
-    imageUrl: "/assets/img/projects/infinity.png",
+      " A Server-Side-Rendered e-commerce with login, live chat and cart management. The final project for Node CoderHouse course.",
+    tecnology: ["Node.js", "Express", "MongoDB"],
+    imageUrl: "/assets/img/projects/infinity.webp",
     date: "April 2023",
     device: "Desktop",
     isPractice: true,
@@ -150,9 +138,9 @@ export const projectsData = [
   {
     title: "Real Madrid Store Clone",
     description:
-      "The final project for React CoderHouse course. An e-commerce where you can simulate buying Real Madrid merch.",
+      "An React e-commerce where you can simulate buying Real Madrid merch. The final project for React CoderHouse course.",
     tecnology: ["React", "Firebase"],
-    imageUrl: "/assets/img/projects/realmadrid.png",
+    imageUrl: "/assets/img/projects/realmadrid.webp",
     date: "September 2022",
     device: "Desktop / Mobile",
     isPractice: true,
@@ -162,9 +150,9 @@ export const projectsData = [
   {
     title: "Virtual Wallet Simulator",
     description:
-      "The final project for JavaScript CoderHouse course. A virtual wallet where you can simulate sending and receiving money, paying and saving contacts.",
-    tecnology: ["JavaScript", "API fetch"],
-    imageUrl: "/assets/img/projects/watermelon.png",
+      "A React virtual wallet where you can simulate send and receive money from other users. Connected to a Node RESTful API. NOTE: slow initial server startup because of free tier.",
+    tecnology: ["React", "Node.js", "MongoDB"],
+    imageUrl: "/assets/img/projects/watermelon.webp",
     date: "July 2022",
     device: "Desktop",
     isPractice: true,
@@ -173,11 +161,23 @@ export const projectsData = [
     deployUrl: "https://watermelon-wallet.vercel.app/",
   },
   {
+    title: "C3 Plus Platform",
+    description:
+      "A video streaming platform built with Next.js where users can sign up, save favorites and view content from a christian church in Mendoza, Argentina.",
+    tecnology: ["Next.js", "Framer Motion", "MongoDB"],
+    imageUrl: "/assets/img/projects/c3plus.webp",
+    date: "July 2023",
+    device: "Desktop / Mobile",
+    isPractice: false,
+    githubUrl: null,
+    deployUrl: "https://c3plus.vercel.app/",
+  },
+  {
     title: "PlayStation Website Clone",
     description:
-      "The final project for HTML & CSS CoderHouse course. A static PlayStation clone website where flexbox, grids and basics animations where used.",
+      "A static PlayStation clone website where flexbox, grids and basics animations where used. The final project for HTML & CSS CoderHouse course.",
     tecnology: ["HTML", "CSS", "SASS"],
-    imageUrl: "/assets/img/projects/playstation.png",
+    imageUrl: "/assets/img/projects/playstation.webp",
     date: "May 2022",
     device: "Desktop / Mobile",
     isPractice: true,
@@ -188,7 +188,7 @@ export const projectsData = [
     title: "Calculator",
     description: "A simple calculator built with Vanilla JavaScript.",
     tecnology: ["HTML", "CSS", " JavaScript"],
-    imageUrl: "/assets/img/projects/calculator.png",
+    imageUrl: "/assets/img/projects/calculator.webp",
     date: "May 2022",
     device: "Desktop / Mobile",
     isPractice: true,

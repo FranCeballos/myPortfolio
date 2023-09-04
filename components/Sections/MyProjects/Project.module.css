@@ -11,7 +11,7 @@
 }
 
 .image-box {
-  border-radius: 20px;
+  border-radius: 5px;
   overflow: hidden;
   position: relative;
 }
@@ -103,5 +103,9 @@
   }
   .links-container {
     opacity: 1;
+  }
+
+  .tech-text {
+    font-size: 0.75rem;
   }
 }

@@ -10,9 +10,10 @@ import classes from "./AboutFinder.module.css";
 import List from "./List";
 import FinderControlIcons from "./FinderControlIcons";
 import { certificatesData, educationData, socialsData } from "@/db/myData";
+import AboutMe from "./AboutMe";
 
 const AboutFinder = ({ containerRef }) => {
-  const [subfolderName, setSubfolderName] = useState("education");
+  const [subfolderName, setSubfolderName] = useState("aboutme");
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -22,6 +23,7 @@ const AboutFinder = ({ containerRef }) => {
     useTransform(scrollYProgress, [0, 1], [-400, 0])
   );
 
+  const showAboutMeHandler = () => setSubfolderName("aboutme");
   const showCertificatesHandler = () => setSubfolderName("certificates");
   const showEducationHandler = () => setSubfolderName("education");
   const showSocialsHandler = () => setSubfolderName("socials");
@@ -36,6 +38,15 @@ const AboutFinder = ({ containerRef }) => {
     >
       <FinderControlIcons />
       <div className={classes["finder__sidebar"]}>
+        <button
+          onClick={showAboutMeHandler}
+          id="education-btn"
+          className={`${classes["finder__btn"]} ${
+            subfolderName === "aboutme" ? classes["active"] : ""
+          }`}
+        >
+          AboutMe
+        </button>
         <button
           onClick={showEducationHandler}
           id="education-btn"
@@ -71,6 +82,7 @@ const AboutFinder = ({ containerRef }) => {
       </div>
       <div className={classes["finder__content"]}>
         <AnimatePresence initial={false} mode="wait">
+          {subfolderName === "aboutme" && <AboutMe />}
           {subfolderName === "certificates" && (
             <List key="certificates" data={certificatesData} />
           )}

@@ -1,14 +1,14 @@
 .section__content {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.7fr 1.3fr;
   grid-template-rows: 1fr;
   gap: 4rem;
 }
 
 .section__image-box {
   place-self: center;
-  width: 50%;
+  width: 70%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;

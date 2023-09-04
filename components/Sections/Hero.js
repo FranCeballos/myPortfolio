@@ -14,7 +14,8 @@ const Hero = () => {
         }}
         className={classes.title}
       >
-        Let there be code.
+        Hello! I'm Francisco,
+        <br /> Front End Developer.
       </motion.h1>
       <motion.div
         initial={{ scaleX: 0, originX: 0 }}
