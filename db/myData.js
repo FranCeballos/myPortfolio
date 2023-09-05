@@ -160,7 +160,7 @@ export const projectsData = [
       "https://github.com/FranCeballos/Watermelon_wallet-simulator.git",
     deployUrl: "https://watermelon-wallet.vercel.app/",
   },
-  {
+  /* {
     title: "C3 Plus Platform",
     description:
       "A video streaming platform built with Next.js where users can sign up, save favorites and view content from a christian church in Mendoza, Argentina.",
@@ -171,7 +171,7 @@ export const projectsData = [
     isPractice: false,
     githubUrl: null,
     deployUrl: "https://c3plus.vercel.app/",
-  },
+  }, */
   {
     title: "PlayStation Website Clone",
     description:

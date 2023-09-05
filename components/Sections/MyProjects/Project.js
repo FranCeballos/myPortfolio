@@ -46,7 +46,7 @@ const Project = ({ data }) => {
             >
               DEPLOY
             </motion.p>
-            {/* {data.githubUrl && (
+            {data.githubUrl && (
               <Link
                 href={data.githubUrl}
                 target="_blank"
@@ -58,7 +58,7 @@ const Project = ({ data }) => {
                   src="/assets/img/tools/github.png"
                 />
               </Link>
-            )} */}
+            )}
           </div>
         </div>
         <div className={classes["content"]}>
