@@ -3,7 +3,7 @@ import classes from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className={classes["container"]}>
+    <section className={classes.container}>
       <motion.h1
         initial={{ scale: 10, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
