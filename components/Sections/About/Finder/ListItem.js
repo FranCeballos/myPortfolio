@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import classes from "./ListItem.module.css";
+import Image from "next/image";
 
 const itemVariant = {
   hidden: {
@@ -29,13 +30,16 @@ const ListItem = ({
   return (
     <motion.li variants={itemVariant} className={classes["item"]}>
       <div className={classes["item__img-box"]}>
-        <img
+        <Image
           className={classes["item__img"]}
+          height={200}
+          width={200}
+          priority={true}
           src={
             educationImage
               ? isUdemy
-                ? "./assets/img/udemy_logo.webp"
-                : "./assets/img/coderhouse_logo.webp"
+                ? "/assets/img/udemy_logo.webp"
+                : "/assets/img/coderhouse_logo.webp"
               : customImageUrl
           }
           alt={

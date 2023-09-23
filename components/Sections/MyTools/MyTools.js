@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { logos, logos2 } from "@/db/myData";
 import classes from "./MyTools.module.css";
+import Image from "next/image";
 
 const MyTools = () => {
   return (
@@ -19,9 +20,11 @@ const MyTools = () => {
         {logos.concat(logos).map((logoInfo) => {
           return (
             <div key={Math.random()} className={classes["tools__item"]}>
-              <img
+              <Image
                 className={classes["tools__image"]}
                 src={logoInfo.imageUrl}
+                width={200}
+                height={200}
                 alt={logoInfo.altText}
               />
             </div>
@@ -42,9 +45,11 @@ const MyTools = () => {
         {logos2.concat(logos2).map((logoInfo) => {
           return (
             <div key={Math.random()} className={classes["tools__item"]}>
-              <img
+              <Image
                 className={classes["tools__image"]}
                 src={logoInfo.imageUrl}
+                width={200}
+                height={200}
                 alt={logoInfo.altText}
               />
             </div>

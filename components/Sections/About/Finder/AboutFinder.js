@@ -20,7 +20,8 @@ const AboutFinder = ({ containerRef }) => {
     offset: ["0 1", "0.6 0.8"],
   });
   const xPositionFinder = useSpring(
-    useTransform(scrollYProgress, [0, 1], [-400, 0])
+    useTransform(scrollYProgress, [0, 1], [-400, 0]),
+    { stiffness: 450, bounce: 0.1, damping: 90 }
   );
 
   const showAboutMeHandler = () => setSubfolderName("aboutme");
@@ -82,7 +83,7 @@ const AboutFinder = ({ containerRef }) => {
       </div>
       <div className={classes["finder__content"]}>
         <AnimatePresence initial={false} mode="wait">
-          {subfolderName === "aboutme" && <AboutMe />}
+          {subfolderName === "aboutme" && <AboutMe key="about" />}
           {subfolderName === "certificates" && (
             <List key="certificates" data={certificatesData} />
           )}

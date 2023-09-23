@@ -19,6 +19,7 @@ const Footer = () => {
             src="/assets/img/linkedin.png"
             width={300}
             height={300}
+            alt="LinkedIn Logo"
           />
         </motion.a>
         <motion.a
@@ -30,6 +31,7 @@ const Footer = () => {
           <Image
             className={classes.linkedInImage}
             src="/assets/img/tools/github.png"
+            alt="LinkedIn Logo"
             width={300}
             height={300}
           />

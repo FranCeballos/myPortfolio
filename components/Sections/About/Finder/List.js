@@ -30,7 +30,7 @@ const List = ({ data }) => {
     >
       {data.map((item) => (
         <ListItem
-          key={item.title}
+          key={Math.random()}
           title={item.title}
           educationImage={item.educationImage}
           isUdemy={item.isUdemy}

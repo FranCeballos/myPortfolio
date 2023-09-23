@@ -29,7 +29,7 @@ function HeadComponent(props) {
           sizes="16x16"
           href="/assets/img/favicons/favicon-16x16.png"
         />
-        <link rel="manifest" href="/favicons/site.webmanifest" />
+        <link rel="manifest" href="/assets/img/favicons/site.webmanifest" />
       </Head>
     </>
   );

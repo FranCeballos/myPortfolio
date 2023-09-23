@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
 import classes from "./Project.module.css";
 
@@ -22,13 +21,11 @@ const itemVariant = {
 
 const Project = ({ data }) => {
   return (
-    <motion.a
+    <motion.div
       variants={itemVariant}
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 1, type: "spring" }}
       className="link-styles-off"
-      href={data.deployUrl}
-      target="_blank"
     >
       <div className={classes.container}>
         <div className={classes["image-box"]}>
@@ -37,27 +34,33 @@ const Project = ({ data }) => {
             src={data.imageUrl}
             width={1280}
             height={688}
+            alt={data.title}
           />
           <div className={classes["links-container"]}>
-            <motion.p
+            <motion.a
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 1, type: "spring" }}
+              href={data.deployUrl}
+              target="_blank"
               className={classes["links-deploy"]}
             >
               DEPLOY
-            </motion.p>
+            </motion.a>
             {data.githubUrl && (
-              <Link
+              <motion.a
                 href={data.githubUrl}
                 target="_blank"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 1, type: "spring" }}
               >
-                <img
+                <Image
                   className={classes["link-github"]}
+                  width={300}
+                  height={300}
                   src="/assets/img/tools/github.png"
+                  alt={data.title}
                 />
-              </Link>
+              </motion.a>
             )}
           </div>
         </div>
@@ -68,7 +71,7 @@ const Project = ({ data }) => {
         <div className={classes["tech-container"]}>
           {data.tecnology.map((tech) => (
             <div
-              key={tech}
+              key={Math.random()}
               className={`${classes["tech-text-container"]} ${classes["blue"]}`}
             >
               <p className={classes["tech-text"]}>{tech}</p>
@@ -76,7 +79,7 @@ const Project = ({ data }) => {
           ))}
         </div>
       </div>
-    </motion.a>
+    </motion.div>
   );
 };
 
