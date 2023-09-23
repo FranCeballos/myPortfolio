@@ -19,26 +19,55 @@ const Hero = () => {
       </motion.h1>
       <motion.div
         initial={{ scaleX: 0, originX: 0 }}
+        onAnimationComplete={() => console.log("completed")}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 3, delay: 1.5, type: "spring" }}
+        transition={{
+          duration: 3,
+          delay: 1.5,
+          type: "spring",
+          repeat: Infinity,
+          repeatType: "reverse",
+          repeatDelay: 1.5,
+        }}
         className={classes["bar1"]}
       ></motion.div>
       <motion.div
         initial={{ scaleX: 0, originX: 0 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 3, delay: 1.3, type: "spring" }}
+        transition={{
+          duration: 3,
+          delay: 1.3,
+          type: "spring",
+          repeat: Infinity,
+          repeatType: "reverse",
+          repeatDelay: 1.5,
+        }}
         className={classes["bar2"]}
       ></motion.div>
       <motion.div
         initial={{ scaleX: 0, originX: 1 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 3, delay: 1.5, type: "spring" }}
+        transition={{
+          duration: 3,
+          delay: 1.5,
+          type: "spring",
+          repeat: Infinity,
+          repeatType: "reverse",
+          repeatDelay: 1.5,
+        }}
         className={classes["bar3"]}
       ></motion.div>
       <motion.div
         initial={{ scaleX: 0, originX: 1 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 3, delay: 1.3, type: "spring" }}
+        transition={{
+          duration: 3,
+          delay: 1.3,
+          type: "spring",
+          repeat: Infinity,
+          repeatType: "reverse",
+          repeatDelay: 1.5,
+        }}
         className={classes["bar4"]}
       ></motion.div>
     </section>
