@@ -124,6 +124,31 @@ export const logos2 = [
 
 export const projectsData = [
   {
+    title: "Santiago Lucero Coach",
+    description:
+      "The official landing page of Santiago Lucero, a professional personal fitness trainer. A new high standard in my front-end design and programming skills.",
+    tecnology: ["Next.js", "Framer Motion"],
+    imageUrl: "/assets/img/projects/santiagolucerocoach.webp",
+    date: "September 2023",
+    device: "Desktop",
+    isPractice: false,
+    githubUrl: "https://github.com/FranCeballos/santiago-lucero-coach.git",
+    deployUrl: "https://santiagolucerocoach.com",
+  },
+  {
+    title: "Virtual Wallet Simulator",
+    description:
+      "A React virtual wallet where you can simulate send and receive money from other users. Connected to a Node RESTful API.",
+    tecnology: ["React", "Node.js", "MongoDB"],
+    imageUrl: "/assets/img/projects/watermelon.webp",
+    date: "July 2022",
+    device: "Desktop",
+    isPractice: true,
+    githubUrl:
+      "https://github.com/FranCeballos/Watermelon_wallet-simulator.git",
+    deployUrl: "https://watermelon-wallet.vercel.app/",
+  },
+  {
     title: "Infinity Entertaiment App",
     description:
       " A Server-Side-Rendered e-commerce with login, live chat and cart management. The final project for Node CoderHouse course.",
@@ -146,19 +171,6 @@ export const projectsData = [
     isPractice: true,
     githubUrl: "https://github.com/FranCeballos/realMadridStoreClone.git",
     deployUrl: "https://real-madrid-store-clone-ceballos.vercel.app/",
-  },
-  {
-    title: "Virtual Wallet Simulator",
-    description:
-      "A React virtual wallet where you can simulate send and receive money from other users. Connected to a Node RESTful API.",
-    tecnology: ["React", "Node.js", "MongoDB"],
-    imageUrl: "/assets/img/projects/watermelon.webp",
-    date: "July 2022",
-    device: "Desktop",
-    isPractice: true,
-    githubUrl:
-      "https://github.com/FranCeballos/Watermelon_wallet-simulator.git",
-    deployUrl: "https://watermelon-wallet.vercel.app/",
   },
   {
     title: "PlayStation Website Clone",
