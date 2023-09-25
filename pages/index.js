@@ -8,6 +8,8 @@ import MyTools from "@/components/Sections/MyTools/MyTools";
 import MyProjects from "@/components/Sections/MyProjects/MyProjects";
 import { projectsData } from "@/db/myData";
 import Footer from "@/components/Footer/Footer";
+import EnvelopeIcon from "@/components/UI/Icons/EnvelopeIcon";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +18,17 @@ const Home = ({ projects }) => {
     <>
       <HeadComponent
         title="Dev. Francisco Ceballos"
-        description="Full-Stack Web Developer"
+        description="Front End Web Developer"
       />
+      <motion.a
+        initial={{ x: "50vw" }}
+        animate={{ x: 0 }}
+        transition={{ duration: 2, delay: 3, type: "spring" }}
+        href="mailto:franciscoceballos.dev@gmail.com"
+        className="link__fixed"
+      >
+        <EnvelopeIcon />
+      </motion.a>
       <Hero />
       <SectionLayout title="./AboutMe" horizontalPadding={true}>
         <About />
