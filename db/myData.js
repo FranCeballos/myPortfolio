@@ -138,7 +138,7 @@ export const projectsData = [
   {
     title: "Virtual Wallet Simulator",
     description:
-      "A React virtual wallet where you can simulate send and receive money from other users. Connected to a Node RESTful API.",
+      "A React virtual wallet where you can simulate sending and receiving money from other users. It is connected to a Node RESTful API.",
     tecnology: ["React", "Node.js", "MongoDB"],
     imageUrl: "/assets/img/projects/watermelon.webp",
     date: "July 2022",
