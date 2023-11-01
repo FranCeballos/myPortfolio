@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import classes from "./SectionLayout.module.css";
+import ScaleInView from "../UI/AnimatedComponents/ScaleInView";
 
 const SectionLayout = ({
   title,
@@ -10,11 +11,6 @@ const SectionLayout = ({
   darker = false,
 }) => {
   const sectionRef = useRef();
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["0 0.9", "1 1"],
-  });
-  const titleScale = useSpring(scrollYProgress);
 
   return (
     <section
@@ -23,12 +19,15 @@ const SectionLayout = ({
       } ${darker ? classes.darker : ""}`}
     >
       <div className={classes["title-container"]} ref={sectionRef}>
-        <motion.h2
-          style={{ scale: titleScale }}
-          className={titleMargin ? classes.title : classes["title__no-margin"]}
-        >
-          {title}
-        </motion.h2>
+        <ScaleInView ref={sectionRef}>
+          <motion.h2
+            className={
+              titleMargin ? classes.title : classes["title__no-margin"]
+            }
+          >
+            {title}
+          </motion.h2>
+        </ScaleInView>
       </div>
       {children}
     </section>

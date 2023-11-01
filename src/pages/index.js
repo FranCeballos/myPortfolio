@@ -1,6 +1,5 @@
-import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
-import { projectsData } from "@/src/db/myData";
+import { fetchData } from "../lib/fetchData";
 
 import HeadComponent from "@/src/components/Head/Head";
 import Hero from "@/src/components/Sections/Hero";
@@ -10,10 +9,18 @@ import MyTools from "@/src/components/Sections/MyTools/MyTools";
 import MyProjects from "@/src/components/Sections/MyProjects/MyProjects";
 import Footer from "@/src/components/Footer/Footer";
 import EnvelopeIcon from "@/src/components/UI/Icons/EnvelopeIcon";
+import ScaleOnHover from "../components/UI/AnimatedComponents/ScaleOnHover";
 
-const inter = Inter({ subsets: ["latin"] });
+const Home = ({ data }) => {
+  const {
+    educationData,
+    certificatesData,
+    socialsData,
+    logos,
+    logos2,
+    projectsData,
+  } = data;
 
-const Home = ({ projects }) => {
   return (
     <>
       <HeadComponent
@@ -27,28 +34,33 @@ const Home = ({ projects }) => {
         href="mailto:franciscoceballos.dev@gmail.com"
         className="link__fixed"
       >
-        <EnvelopeIcon />
+        <ScaleOnHover>
+          <EnvelopeIcon />
+        </ScaleOnHover>
       </motion.a>
       <Hero />
       <SectionLayout title="./AboutMe" horizontalPadding={true}>
-        <About />
+        <About aboutData={{ educationData, certificatesData, socialsData }} />
       </SectionLayout>
       <SectionLayout title="./MyTools" horizontalPadding={false}>
-        <MyTools />
+        <MyTools toolsData={{ logos, logos2 }} />
       </SectionLayout>
       <SectionLayout title="./MyProjects" darker={true}>
-        <MyProjects projects={projects} />
+        <MyProjects projects={projectsData} />
       </SectionLayout>
       <Footer />
     </>
   );
 };
 
-export const getStaticProps = () => {
+export const getStaticProps = async () => {
+  const [data] = await fetchData();
+
   return {
     props: {
-      projects: projectsData,
+      data,
     },
+    revalidate: 30,
   };
 };
 

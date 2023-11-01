@@ -1,25 +1,33 @@
+import { useRef } from "react";
 import { motion } from "framer-motion";
+
+import ParallaxOnScroll from "../UI/AnimatedComponents/ParallaxOnScroll";
+
 import classes from "./Hero.module.css";
 
 const Hero = () => {
+  const titleRef = useRef(null);
   return (
-    <section className={classes.container}>
-      <motion.h1
-        initial={{ scale: 10, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{
-          duration: 3,
-          delay: 0.5,
-          type: "spring",
-        }}
-        className={classes.title}
-      >
-        Hello! I'm Francisco,
-        <br /> Front End Developer.
-      </motion.h1>
+    <motion.section className={classes.container}>
+      <ParallaxOnScroll ref={titleRef}>
+        <motion.div ref={titleRef} className={classes["title__container"]}>
+          <motion.h1
+            initial={{ scale: 10, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+              duration: 3,
+              delay: 0.5,
+              type: "spring",
+            }}
+            className={classes.title}
+          >
+            Hello! I'm Francisco,
+            <br /> Front End Developer.
+          </motion.h1>
+        </motion.div>
+      </ParallaxOnScroll>
       <motion.div
         initial={{ scaleX: 0, originX: 0 }}
-        onAnimationComplete={() => console.log("completed")}
         animate={{ scaleX: 1 }}
         transition={{
           duration: 3,
@@ -70,7 +78,7 @@ const Hero = () => {
         }}
         className={classes["bar4"]}
       ></motion.div>
-    </section>
+    </motion.section>
   );
 };
 

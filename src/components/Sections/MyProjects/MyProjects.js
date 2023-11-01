@@ -1,5 +1,7 @@
-import Project from "./Project";
 import { motion } from "framer-motion";
+
+import Project from "./Project";
+
 import classes from "./MyProjects.module.css";
 
 const containerVariants = {

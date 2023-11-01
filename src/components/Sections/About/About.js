@@ -1,10 +1,12 @@
-import AboutFinder from "./Finder/AboutFinder";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import classes from "./About.module.css";
 import { useRef } from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 
-const About = () => {
+import AboutFinder from "./Finder/AboutFinder";
+
+import classes from "./About.module.css";
+
+const About = ({ aboutData }) => {
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -34,7 +36,7 @@ const About = () => {
           className={classes["section__image"]}
         />
       </motion.div>
-      <AboutFinder containerRef={containerRef} />
+      <AboutFinder containerRef={containerRef} aboutData={aboutData} />
     </div>
   );
 };

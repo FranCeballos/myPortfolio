@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import { logos, logos2 } from "@/src/db/myData";
-import classes from "./MyTools.module.css";
 import Image from "next/image";
 
-const MyTools = () => {
+import classes from "./MyTools.module.css";
+
+const MyTools = ({ toolsData }) => {
+  const { logos, logos2 } = toolsData;
   return (
     <>
       <motion.div

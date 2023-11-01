@@ -6,13 +6,15 @@ import {
   useSpring,
   AnimatePresence,
 } from "framer-motion";
-import classes from "./AboutFinder.module.css";
+
 import List from "./List";
 import FinderControlIcons from "./FinderControlIcons";
-import { certificatesData, educationData, socialsData } from "@/src/db/myData";
 import AboutMe from "./AboutMe";
 
-const AboutFinder = ({ containerRef }) => {
+import classes from "./AboutFinder.module.css";
+
+const AboutFinder = ({ containerRef, aboutData }) => {
+  const { certificatesData, educationData, socialsData } = aboutData;
   const [subfolderName, setSubfolderName] = useState("aboutme");
 
   const { scrollYProgress } = useScroll({
