@@ -1,15 +1,15 @@
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import HeadComponent from "@/components/Head/Head";
-import Hero from "@/components/Sections/Hero";
-import SectionLayout from "@/components/Sections/SectionLayout";
-import About from "@/components/Sections/About/About";
-import MyTools from "@/components/Sections/MyTools/MyTools";
-import MyProjects from "@/components/Sections/MyProjects/MyProjects";
-import { projectsData } from "@/db/myData";
-import Footer from "@/components/Footer/Footer";
-import EnvelopeIcon from "@/components/UI/Icons/EnvelopeIcon";
 import { motion } from "framer-motion";
+import { projectsData } from "@/src/db/myData";
+
+import HeadComponent from "@/src/components/Head/Head";
+import Hero from "@/src/components/Sections/Hero";
+import SectionLayout from "@/src/components/Sections/SectionLayout";
+import About from "@/src/components/Sections/About/About";
+import MyTools from "@/src/components/Sections/MyTools/MyTools";
+import MyProjects from "@/src/components/Sections/MyProjects/MyProjects";
+import Footer from "@/src/components/Footer/Footer";
+import EnvelopeIcon from "@/src/components/UI/Icons/EnvelopeIcon";
 
 const inter = Inter({ subsets: ["latin"] });
 

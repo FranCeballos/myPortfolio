@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { logos, logos2 } from "@/db/myData";
+import { logos, logos2 } from "@/src/db/myData";
 import classes from "./MyTools.module.css";
 import Image from "next/image";
 

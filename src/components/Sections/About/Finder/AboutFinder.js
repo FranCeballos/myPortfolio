@@ -9,7 +9,7 @@ import {
 import classes from "./AboutFinder.module.css";
 import List from "./List";
 import FinderControlIcons from "./FinderControlIcons";
-import { certificatesData, educationData, socialsData } from "@/db/myData";
+import { certificatesData, educationData, socialsData } from "@/src/db/myData";
 import AboutMe from "./AboutMe";
 
 const AboutFinder = ({ containerRef }) => {

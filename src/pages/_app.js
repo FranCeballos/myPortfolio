@@ -1,5 +1,4 @@
-import NavBarLayout from "@/components/UI/NavBarLayout";
-import "@/styles/globals.css";
+import "@/src/styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }) {
