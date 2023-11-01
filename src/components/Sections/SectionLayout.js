@@ -13,13 +13,13 @@ const SectionLayout = ({
   const sectionRef = useRef();
 
   return (
-    <section
+    <motion.section
       className={`${
         horizontalPadding ? classes.container : classes["container__no-padding"]
       } ${darker ? classes.darker : ""}`}
     >
-      <div className={classes["title-container"]} ref={sectionRef}>
-        <ScaleInView ref={sectionRef}>
+      <ScaleInView ref={sectionRef}>
+        <motion.div className={classes["title-container"]} ref={sectionRef}>
           <motion.h2
             className={
               titleMargin ? classes.title : classes["title__no-margin"]
@@ -27,10 +27,10 @@ const SectionLayout = ({
           >
             {title}
           </motion.h2>
-        </ScaleInView>
-      </div>
+        </motion.div>
+      </ScaleInView>
       {children}
-    </section>
+    </motion.section>
   );
 };
 
