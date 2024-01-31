@@ -10,6 +10,7 @@ import MyProjects from "@/src/components/Sections/MyProjects/MyProjects";
 import Footer from "@/src/components/Footer/Footer";
 import EnvelopeIcon from "@/src/components/UI/Icons/EnvelopeIcon";
 import ScaleOnHover from "../components/UI/AnimatedComponents/ScaleOnHover";
+import Header from "../components/Header/Header";
 
 const Home = ({ data }) => {
   const {
@@ -38,14 +39,15 @@ const Home = ({ data }) => {
           <EnvelopeIcon />
         </ScaleOnHover>
       </motion.a>
+      <Header />
       <Hero />
-      <SectionLayout title="./AboutMe" horizontalPadding={true}>
+      <SectionLayout id="aboutme" title="./AboutMe" horizontalPadding={true}>
         <About aboutData={{ educationData, certificatesData, socialsData }} />
       </SectionLayout>
-      <SectionLayout title="./MyTools" horizontalPadding={false}>
+      <SectionLayout id="mytools" title="./MyTools" horizontalPadding={false}>
         <MyTools toolsData={{ logos, logos2 }} />
       </SectionLayout>
-      <SectionLayout title="./MyProjects" darker={true}>
+      <SectionLayout id="myprojects" title="./MyProjects" darker={true}>
         <MyProjects projects={projectsData} />
       </SectionLayout>
       <Footer />

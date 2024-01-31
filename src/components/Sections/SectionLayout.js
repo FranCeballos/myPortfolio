@@ -9,11 +9,13 @@ const SectionLayout = ({
   horizontalPadding = true,
   titleMargin = true,
   darker = false,
+  id,
 }) => {
   const sectionRef = useRef();
 
   return (
     <motion.section
+      id={id}
       className={`${
         horizontalPadding ? classes.container : classes["container__no-padding"]
       } ${darker ? classes.darker : ""}`}
