@@ -12,11 +12,13 @@ const Hero = () => {
       <ParallaxOnScroll ref={titleRef}>
         <motion.div ref={titleRef} className={classes["title__container"]}>
           <motion.h1
-            initial={{ scale: 10, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            initial={{ scale: 2, opacity: 0 }}
+            animate={{
+              scale: 1,
+              opacity: 1,
+            }}
             transition={{
-              duration: 3,
-              delay: 0.5,
+              duration: 4,
               type: "spring",
             }}
             className={classes.title}
