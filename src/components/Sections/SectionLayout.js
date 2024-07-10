@@ -10,6 +10,7 @@ const SectionLayout = ({
   titleMargin = true,
   darker = false,
   id,
+  noDiagonal = false,
 }) => {
   const sectionRef = useRef();
 
@@ -18,7 +19,13 @@ const SectionLayout = ({
       id={id}
       className={`${
         horizontalPadding ? classes.container : classes["container__no-padding"]
-      } ${darker ? classes.darker : ""}`}
+      } ${
+        darker
+          ? noDiagonal
+            ? classes["darker__no-diagonal"]
+            : classes.darker
+          : ""
+      }`}
     >
       <ScaleInView ref={sectionRef}>
         <motion.div className={classes["title-container"]} ref={sectionRef}>

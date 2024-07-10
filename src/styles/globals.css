@@ -9,12 +9,13 @@
 
 :root {
   --maindarkblue: #222831;
-  --maindarkblue-2: #272d38;
+  --maindarkblue-2: #2d3443;
   --maindarkgrey: #393e46;
   --maindarkgrey2: #1b1c1e;
   --maindarkgrey2-75: #1b1c1e75;
   --mainlightblue: #00adb5;
   --mainlightgrey: #eeeeee;
+  --secondary-text: rgb(148, 148, 148);
 
   --bg-color: var(--maindarkblue);
   --text-color: var(--mainlightgrey);

@@ -6,7 +6,7 @@ import classes from "./MyTools.module.css";
 const MyTools = ({ toolsData }) => {
   const { logos, logos2 } = toolsData;
   return (
-    <>
+    <div className={classes["tools__container"]}>
       <motion.div
         initial={{ x: "-50%", y: 150 }}
         animate={{ x: 0, y: 150 }}
@@ -57,7 +57,7 @@ const MyTools = ({ toolsData }) => {
           );
         })}
       </motion.div>
-    </>
+    </div>
   );
 };
 

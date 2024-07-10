@@ -11,6 +11,7 @@ import Footer from "@/src/components/Footer/Footer";
 import EnvelopeIcon from "@/src/components/UI/Icons/EnvelopeIcon";
 import ScaleOnHover from "../components/UI/AnimatedComponents/ScaleOnHover";
 import Header from "../components/Header/Header";
+import MyCareer from "../components/Sections/MyCareer/MyCareer";
 
 const Home = ({ data }) => {
   const {
@@ -20,6 +21,7 @@ const Home = ({ data }) => {
     logos,
     logos2,
     projectsData,
+    myCareer,
   } = data;
 
   return (
@@ -47,7 +49,15 @@ const Home = ({ data }) => {
       <SectionLayout id="mytools" title="./MyTools" horizontalPadding={false}>
         <MyTools toolsData={{ logos, logos2 }} />
       </SectionLayout>
-      <SectionLayout id="myprojects" title="./MyProjects" darker={true}>
+      <SectionLayout id="mycareer" title="./MyCareer" darker={true}>
+        <MyCareer career={myCareer} />
+      </SectionLayout>
+      <SectionLayout
+        id="myprojects"
+        title="./MyProjects"
+        darker={true}
+        noDiagonal
+      >
         <MyProjects projects={projectsData} />
       </SectionLayout>
       <Footer />
