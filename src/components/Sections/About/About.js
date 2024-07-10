@@ -30,8 +30,8 @@ const About = ({ aboutData }) => {
       >
         <Image
           src="/assets/img/profile-pic.webp"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           alt="Profile Picture"
           className={classes["section__image"]}
         />

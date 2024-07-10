@@ -3,12 +3,13 @@
   display: grid;
   grid-template-columns: 0.7fr 1.3fr;
   grid-template-rows: 1fr;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .section__image-box {
-  place-self: center;
-  width: 70%;
+  place-self: center end;
+  width: 100%;
+  max-width: 250px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -25,6 +26,7 @@
 @media screen and (max-width: 768px) {
   .section__image-box {
     width: 35%;
+    place-self: center;
   }
   .section__content {
     grid-template-columns: 1fr;
