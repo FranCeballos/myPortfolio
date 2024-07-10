@@ -8,6 +8,10 @@ export const navItems = [
     href: "/#mytools",
   },
   {
+    title: "./MyCareer",
+    href: "/#mycareer",
+  },
+  {
     title: "./MyProjects",
     href: "/#myprojects",
   },

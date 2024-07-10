@@ -15,6 +15,7 @@
   --maindarkgrey2-75: #1b1c1e75;
   --mainlightblue: #00adb5;
   --mainlightgrey: #eeeeee;
+  --secondary-text: rgb(148, 148, 148);
 
   --bg-color: var(--maindarkblue);
   --text-color: var(--mainlightgrey);

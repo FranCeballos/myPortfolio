@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.image__container {
+  width: 100px;
+  height: 100px;
+}
+
+.image {
+  width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.company {
+  color: var(--secondary-text);
+}
+
+.date__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date__container p {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 435px) {
+  .date__container {
+    gap: 0.5rem;
+  }
+  .date__container p {
+    font-size: 0.7rem;
+  }
+}

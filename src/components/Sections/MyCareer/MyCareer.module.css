@@ -1,0 +1,10 @@
+.container {
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.subtitle {
+  color: var(--secondary-text);
+  margin: 0 0 1.25rem 0;
+  font-size: 0.8rem;
+}
